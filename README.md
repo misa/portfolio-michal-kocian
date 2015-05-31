@@ -8,7 +8,7 @@
 
 - Contacts (phone, e-mail, website)
 - Add **Michal Kocian** to phone contacts
-- Android Developer Nanodegree projects
+- Udacity Android Developer Nanodegree projects
 
 ## Change log
 
