@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">Michal Kocian</string>
+    <string name="person_name">Michal Kocian</string>
+    <string name="person_position">Android developer</string>
+    <string name="toolbar_description">Michal Kocian header</string>
+
+    <!-- Contact info -->
+    <string name="contact_phone_uk">+44 7958 493 981 (UK)</string>
+    <string name="contact_phone_cz">+420 737 320 927 (CZ)</string>
+    <string name="contact_email">michal@kocian.name</string>
+    <string name="contact_web">http://kocian.name</string>
+    <string name="contact_skype">michal.kocian</string>
+
+    <!-- Applications -->
+    <string name="app_my">My application</string>
+    <string name="app_spotify">Spotify streamer</string>
+    <string name="app_scores">Scores app</string>
+    <string name="app_library">Library app</string>
+    <string name="app_bigger">Build it bigger</string>
+    <string name="app_reader">XYZ reader</string>
+
+    <!-- About dialog -->
+    <string name="action_about">About</string>
+    <string name="dialog_about_title">About</string>
+    <string name="dialog_about_message">For further information,\nplease don\'t hesitate to contact me!</string>
+    <string name="dialog_about_button_ok">OK</string>
+
+    <!-- Call dialog -->
+    <string name="dialog_call_title">Phone call to Michal Kocian</string>
+    <string name="dialog_call_message_uk">(United Kingdom number)</string>
+    <string name="dialog_call_message_cz">(Czech republic number)</string>
+    <string name="dialog_call_call">Call</string>
+    <string name="dialog_call_copy">Copy number</string>
+    <string name="dialog_call_title_skype">Skype call to Michal Kocian</string>
+    <string name="dialog_call_copy_skype">Copy Skype</string>
+
+</resources>

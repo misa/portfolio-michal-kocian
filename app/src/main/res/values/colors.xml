@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Main colors -->
+    <color name="primary">#0f6a1f</color>
+    <color name="primary_dark">#0b591a</color>
+    <color name="accent">#ffee5000</color>
+
+</resources>

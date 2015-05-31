@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="TypographyDashes">
+
+    <integer name="ga_sessionTimeout">300</integer>
+    <integer name="ga_dispatchPeriod">600</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- The screen names that will appear in reports -->
+    <screenName name="name.kocian.portfolio.ui.activity.MainActivity">Business card activity</screenName>
+
+    <!--  Google Analytics tracking ID -->
+    <string name="ga_trackingId">UA-57576200-3</string>
+
+</resources>
