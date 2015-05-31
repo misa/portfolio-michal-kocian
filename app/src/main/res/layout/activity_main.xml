@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_contact_height"
+            android:layout_marginBottom="42dp"
+            android:background="?attr/colorPrimary"
+            android:contentDescription="@string/toolbar_description"
+            android:elevation="4dp"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/toolbar_contact_padding"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:ignore="UnusedAttribute" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAddContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_add"
+            android:tint="@android:color/white"
+            tools:ignore="UnusedAttribute" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_contact" />
+
+</LinearLayout>

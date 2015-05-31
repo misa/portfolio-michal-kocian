@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "name.kocian.portfolio"
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 1
+        versionName "0.1.0"
+
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            // App variables
+            buildConfigField("boolean", "ANALYTICS_DRY_RUN", "false")
+            buildConfigField("int", "ANALYTICS_LOG_LEVEL", "2")
+        }
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            // App variables
+            buildConfigField("boolean", "ANALYTICS_DRY_RUN", "true")
+            buildConfigField("int", "ANALYTICS_LOG_LEVEL", "0")
+        }
+    }
+}
+
+dependencies {
+    // Google
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.google.android.gms:play-services-analytics:7.5.0'
+
+    // 3rd party
+    compile 'com.mikepenz:iconics:1.0.1@aar'
+    compile('com.mikepenz:materialdrawer:3.0.2@aar') { transitive = true }
+
+    // Unit tests
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+
+    // Android instrumentation tests
+    androidTestCompile('com.android.support.test:runner:0.2') { exclude module: 'support-annotations' }
+    androidTestCompile('com.android.support.test:rules:0.2') { exclude module: 'support-annotations' }
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.1') { exclude module: 'support-annotations' }
+    androidTestCompile('com.android.support.test.espresso:espresso-contrib:2.1') {
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'recyclerview-v7'
+    }
+}
